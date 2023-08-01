@@ -1,0 +1,29 @@
+@import "variables";
+
+/* ----------------------------- Texts ----------------------------- */
+
+.bigHDTXT {
+  font-size: $xxl-font;
+  font-family: $font-aclonica;
+  text-align: center;
+  //font-size: 154.595px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.W {
+  font-family: $font-inter;
+  font-weight: 700;
+  margin-top: -0.6vw;
+}
+
+.smallHDTXT {
+  font-size: $xl-font;
+  color: $color-primary;
+  font-family: $font-bebas;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0;
+  letter-spacing: 15px;
+}

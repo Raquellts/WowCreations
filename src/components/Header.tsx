@@ -13,7 +13,7 @@ export default function Header() {
       <div className={`${covers.divHeader} flex flex-col text-focus-in`}>
         {/*wow creations texto*/}
         <div className={`${text.bigHDTXT} flex flex-row uppercase`}>
-          <div className={text.W}>w</div>
+          <div className={`${text.W}`}>w</div>
           <div>o</div>
           <div className={`${text.W} mr-6`}>w</div>
           <div className="hidden md:block">creations</div>

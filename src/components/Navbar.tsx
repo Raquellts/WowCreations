@@ -51,7 +51,7 @@ export default function Navbar() {
         </div>
         {/* logo for desktop */}
         <Image
-          src={"/WOWlogoPT.png"}
+          src={"/logo/WOWlogoPT.png"}
           width={50}
           height={50}
           alt="..."

@@ -34,21 +34,32 @@
   margin-right: -50px;
 }
 
+.mockup {
+  object-fit: contain;
+  max-width: 1000px;
+  width: 90% !important;
+  position: relative !important;
+  height: unset !important;
+  margin-bottom: 10vw;
+}
+
+.videomock {
+  border-radius: 20px;
+  border: #fff solid 5px;
+  position: absolute;
+  margin-top: -4%;
+  top: 1;
+  left: 0;
+  margin-left: 5%;
+  width: 30%;
+  z-index: 10;
+}
+
 /* ----------------------------- Divs ----------------------------- */
 
 .divHeader {
   position: relative;
   margin-top: -80px;
-  min-height: 70vh;
-  height: 50vw;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.divAbout {
-  position: relative;
   min-height: 70vh;
   height: 50vw;
   width: 100%;

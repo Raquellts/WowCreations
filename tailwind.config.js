@@ -10,21 +10,7 @@ module.exports = {
     extend: {
       spacing: {
         100: "70vh",
-      },
-
-      animation: {
-        fadeIn: "fadeIn 2s ease-in forwards",
-      },
-
-      keyframes: {
-        fadeIn: {
-          "0%": { opacity: 0 },
-          "100%": { opacity: 1 },
-        },
-      },
-
-      variants: {
-        animation: ["motion-safe"],
+        101: "70vw",
       },
 
       backgroundImage: {

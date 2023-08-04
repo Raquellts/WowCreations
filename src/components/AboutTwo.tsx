@@ -20,7 +20,7 @@ export default function AboutTwo() {
             fill={true}
             alt="..."
             className={covers.mockup}
-          ></Image>
+          />
         </div>
         <div
           className={`${text.infos} flex justify-center flex-col ml-10 md:ml-0 mr-10 md:mr-0`}

@@ -8,7 +8,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 300%;
+  height: 500vh;
   background-image: $img-noise;
   background: cover;
   z-index: -10;
@@ -18,21 +18,39 @@
   background-repeat: no-repeat;
   position: absolute;
   flex-shrink: 0;
-  top: 0;
-  right: 0;
+
   width: 100%;
   height: 100%;
   z-index: -9;
 }
 
 .topLeft {
+  top: 0;
+  right: 0;
   background-image: $img-blobTL;
 }
 
 .topRight {
+  top: 0;
+  right: 0;
   background-image: $img-blobTR;
   margin-right: -50px;
 }
+
+.botRight {
+  top: 1;
+  right: 0;
+  background-image: $img-blobBR;
+  margin-right: -30vw;
+}
+
+.botLeft {
+  top: 1;
+  right: 0;
+  background-image: $img-blobBL;
+}
+
+/* ------------------------------ mockups icons ----------------------------- */
 
 .mockup {
   object-fit: contain;
@@ -40,7 +58,7 @@
   width: 90% !important;
   position: relative !important;
   height: unset !important;
-  margin-bottom: 10vw;
+  margin-bottom: 15vw;
 }
 
 .videomock {
@@ -52,10 +70,57 @@
   left: 0;
   margin-left: 5%;
   width: 30%;
+  max-width: 500px;
   z-index: 10;
 }
 
-/* ----------------------------- Divs ----------------------------- */
+//icons
+
+.aboutIcon {
+  position: absolute;
+  top: 1;
+  width: 9vw;
+}
+
+.react {
+  margin-left: 17vw;
+  margin-top: -15vw;
+  left: 0;
+}
+
+.sass {
+  width: 8vw !important;
+  margin-left: 8vw;
+  margin-top: -6vw;
+  left: 0;
+}
+
+.js {
+  margin-left: 17vw;
+  margin-top: 2vw;
+  left: 0;
+}
+
+.phyton {
+  width: 8vw !important;
+  margin-right: 17vw;
+  margin-top: -15vw;
+  right: 0;
+}
+
+.tailwind {
+  margin-right: 8vw;
+  margin-top: -6vw;
+  right: 0;
+}
+
+.nextjs {
+  margin-right: 17vw;
+  margin-top: 2vw;
+  right: 0;
+}
+
+/* ---------------------------------- Divs ---------------------------------- */
 
 .divHeader {
   position: relative;
@@ -66,4 +131,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.divAbout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  //height: 70vh;
 }

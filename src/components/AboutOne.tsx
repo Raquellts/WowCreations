@@ -20,7 +20,7 @@ export default function AboutOne() {
           fill={true}
           alt="..."
           className={covers.mockup}
-        ></Image>
+        />
       </div>
     </div>
   );

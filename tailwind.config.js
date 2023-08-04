@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        100: "70vh",
+      },
+
       animation: {
         fadeIn: "fadeIn 2s ease-in forwards",
       },

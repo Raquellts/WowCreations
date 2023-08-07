@@ -5,10 +5,11 @@ import text from "../styles/text.module.scss";
 export default function Header() {
   return (
     <>
-      {/*Gradient cima esquerda*/}
-      <div className={`${covers.blob} ${covers.topLeft}`} />
-      {/*Gradient cima direita*/}
-      <div className={`${covers.blob} ${covers.topRight}`} />
+      <div className={`${covers.absoluteBack} ${covers.topLeft}`} />
+
+      <div className={`${covers.absoluteBack} ${covers.topRight}`} />
+
+      <div className={`${covers.absoluteBack} ${covers.lineONE}`} />
 
       <div className={`${covers.divHeader} flex flex-col text-focus-in`}>
         {/*wow creations texto*/}

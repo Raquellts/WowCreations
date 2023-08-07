@@ -8,6 +8,7 @@ import AboutOne from "@/components/AboutOne";
 import AboutTwo from "@/components/AboutTwo";
 import AboutThree from "@/components/AboutThree";
 import Projects from "@/components/Projects";
+import Cards from "@/components/Cards";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <AboutOne />
       <AboutTwo />
       <AboutThree />
+      <Cards />
       <Projects />
       <Footer />
       {/*Ruido de fundo*/}

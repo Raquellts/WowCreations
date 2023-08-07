@@ -7,10 +7,10 @@ export default function AboutThree() {
   return (
     <div className={`${covers.divAbout} h-auto md:h-100`}>
       {/*Gradient cima esquerda*/}
-      <div className={`${covers.blob} ${covers.botLeft}`} />
+      <div className={`${covers.absoluteBack} ${covers.botLeft}`} />
 
       {/*Gradient cima direita*/}
-      <div className={`${covers.blob} ${covers.botRight}`} />
+      <div className={`${covers.absoluteBack} ${covers.botRight}`} />
 
       <div className={`${covers.divAbout}`}>
         <div className={`hidden md:block`}>
@@ -38,14 +38,14 @@ export default function AboutThree() {
         </div>
 
         <div
-          className={`${text.infos} m-10 border-4 rounded-3xl w-fit lg:w-1/3 md:w-2/5`}
+          className={`${text.infos} ${covers.cardBorder} m-10 w-fit lg:w-1/3 md:w-2/5`}
         >
-          <p className="m-10">
-            <h2 className={text.titulo}>Tenha Presença Online</h2>
+          <div className="m-10">
+            <p className={text.titulo}>Tenha Presença Online</p>
             Ter um site permite que você tenha uma presença digital que pode ser
             acessada por pessoas em qualquer lugar do mundo, aumentando a
             visibilidade e alcance do seu negócio ou projeto.
-          </p>
+          </div>
         </div>
 
         <div className={`hidden md:block`}>

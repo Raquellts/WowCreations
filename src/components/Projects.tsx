@@ -1,10 +1,11 @@
 //styles
 import Image from "next/image";
-import covers from "../styles/covers.module.scss";
+import text from "../styles/text.module.scss";
 
 export default function Projects() {
   return (
-    <div className="">
+    <div className="text-center">
+      <p className={`${text.titulo} h-2`}>projetos</p>
       <div className="carousel w-full">
         <div
           id="slide1"

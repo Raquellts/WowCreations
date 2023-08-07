@@ -1,8 +1,16 @@
 import "../styles/globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Aclonica, Bebas_Neue } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+const aclonica = Aclonica({
+  subsets: ["latin"],
+  weight: "400",
+});
+const bebas_Neue = Bebas_Neue({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="dark">
       {/* themes: dark, winter */}
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${inter.className} ${aclonica.className} ${bebas_Neue.className}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

@@ -10,6 +10,8 @@ font-family: 'Bebas Neue', sans-serif;
 font-family: 'Inter', sans-serif (100 a 800);
 */
 
+html,
+body,
 :root {
   overflow-x: hidden;
 }

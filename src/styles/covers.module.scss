@@ -1,6 +1,11 @@
 @import "variables";
 
 /* ----------------------------- Covers ----------------------------- */
+.relativeDiv {
+  position: relative;
+  width: 100vw;
+  height: auto;
+}
 
 .backgroundImage {
   mix-blend-mode: color-burn;
@@ -50,7 +55,7 @@
 }
 
 .lineONE {
-  top: 0;
+  top: 10vw;
   left: 0;
   background-image: $line-one;
 }

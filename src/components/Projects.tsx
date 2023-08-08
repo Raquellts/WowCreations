@@ -19,14 +19,6 @@ export default function Projects() {
             className={`w-100 md:w-101 h-fit mt-20 border-4 rounded-3xl`}
             alt="..."
           />
-          <div className="absolute flex justify-center bottom-2 gap-10">
-            <a href="#slide6" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide2" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
         </div>
 
         <div
@@ -41,14 +33,6 @@ export default function Projects() {
             className={`w-100 md:w-101 h-fit mt-20 border-4 rounded-3xl`}
             alt="..."
           />
-          <div className="absolute flex justify-center bottom-2 gap-10">
-            <a href="#slide1" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide3" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
         </div>
 
         <div
@@ -63,14 +47,6 @@ export default function Projects() {
             className={`w-100 md:w-101 h-fit mt-20 border-4 rounded-3xl`}
             alt="..."
           />
-          <div className="absolute flex justify-center bottom-2 gap-10">
-            <a href="#slide2" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide4" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
         </div>
 
         <div
@@ -85,14 +61,6 @@ export default function Projects() {
             className={`w-100 md:w-101 h-fit mt-20 border-4 rounded-3xl`}
             alt="..."
           />
-          <div className="absolute flex justify-center bottom-2 gap-10">
-            <a href="#slide3" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide5" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
         </div>
 
         <div
@@ -107,14 +75,6 @@ export default function Projects() {
             className={`w-100 md:w-101 h-fit mt-20 border-4 rounded-3xl`}
             alt="..."
           />
-          <div className="absolute flex justify-center bottom-2 gap-10">
-            <a href="#slide4" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide6" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
         </div>
 
         <div
@@ -129,18 +89,10 @@ export default function Projects() {
             className={`w-100 md:w-101 h-fit mt-20 border-4 rounded-3xl`}
             alt="..."
           />
-          <div className="absolute flex justify-center bottom-2 gap-10">
-            <a href="#slide5" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide1" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
         </div>
       </div>
 
-      <div className="flex justify-center w-full py-2 gap-2 my-5">
+      <div className={`flex justify-center w-full py-2 gap-2 my-5`}>
         <a href="#slide1" className="btn btn-xs btn-circle">
           1
         </a>

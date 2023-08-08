@@ -14,16 +14,26 @@ import Cards from "@/components/Cards";
 export default function Home() {
   return (
     <main>
-      <Navbar />
-      <Header />
-      <AboutOne />
-      <AboutTwo />
-      <AboutThree />
-      <Cards />
-      <Projects />
-      <Footer />
-      {/*Ruido de fundo*/}
-      <div className={covers.backgroundImage} />
+      <div id="overflow">
+        <Navbar />
+
+        <Header />
+
+        <AboutOne />
+
+        <AboutTwo />
+
+        <AboutThree />
+
+        <Cards />
+
+        <Projects />
+
+        <Footer />
+
+        {/*Ruido de fundo*/}
+        <div className={covers.backgroundImage} />
+      </div>
     </main>
   );
 }

@@ -15,9 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="dark">
       {/* themes: dark, winter */}
-      <body>
-        <div className="Overflow">{children}</div>
-      </body>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }

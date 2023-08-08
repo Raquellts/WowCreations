@@ -6,7 +6,12 @@ import text from "../styles/text.module.scss";
 export default function AboutTwo() {
   return (
     <div>
-      <video autoPlay muted loop className={covers.videomock}>
+      <video
+        autoPlay
+        muted
+        loop
+        className={`${covers.videomock} transform translate-x-10 translate-y-14 scale-150 md:scale-100 md:translate-x-0 md:translate-y-0`}
+      >
         <source
           src="/sites/ABfestival.mp4"
           type="video/mp4"

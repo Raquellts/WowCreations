@@ -15,7 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="dark">
       {/* themes: dark, winter */}
-      <body>{children}</body>
+      <body>
+        <div className="Overflow">{children}</div>
+      </body>
     </html>
   );
 }

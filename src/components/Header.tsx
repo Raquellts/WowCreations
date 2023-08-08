@@ -9,8 +9,6 @@ export default function Header() {
 
       <div className={`${covers.absoluteBack} ${covers.topRight}`} />
 
-      <div className={`${covers.absoluteBack} ${covers.lineONE}`} />
-
       <div className={`${covers.divHeader} flex flex-col text-focus-in`}>
         {/*wow creations texto*/}
         <div className={`${text.bigHDTXT} flex flex-row uppercase`}>

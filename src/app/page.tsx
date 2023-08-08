@@ -1,5 +1,6 @@
 //styles
 import covers from "../styles/covers.module.scss";
+
 //components
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";

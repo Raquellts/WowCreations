@@ -18,7 +18,7 @@ export default function AboutTwo() {
           className="iframe-wrapper"
         />
       </video>
-      <div className={`grid grid-cols-1 md:grid-cols-3 mt-10`}>
+      <div className={`grid grid-cols-1 md:grid-cols-3`}>
         <div className="flex justify-start col-span-2">
           <Image
             src={"/sites/ABfestival.svg"}
@@ -28,12 +28,14 @@ export default function AboutTwo() {
           />
         </div>
         <div
-          className={`${text.infos} flex justify-center flex-col ml-10 md:ml-0 mr-10 md:mr-0`}
+          className={`${text.infos} flex justify-center flex-col ml-10 md:ml-0 mr-10 md:mr-10`}
         >
-          <h2 className={text.titulo}>Tenha Presença Online</h2>
-          Ter um site permite que você tenha uma presença digital que pode ser
-          acessada por pessoas em qualquer lugar do mundo, aumentando a
-          visibilidade e alcance do seu negócio ou projeto.
+          <h2 className={text.titulo}>RESPONSIVIDADE</h2>
+          De desktops a smartphones, ofereça uma experiência perfeita. Suas
+          páginas irão se adaptar magicamente a qualquer tela, garantindo que
+          seu conteúdo impressione, independentemente do dispositivo utilizado.
+          Alcance uma audiência mais ampla com design responsivo de última
+          geração.
         </div>
       </div>
     </div>

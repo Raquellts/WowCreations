@@ -10,6 +10,14 @@
   font-weight: 400;
 }
 
+.UltrabigTXT {
+  font-size: $uxl-font;
+  font-family: $font-aclonica;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .W {
   font-family: $font-inter;
   font-weight: 700;
@@ -41,4 +49,12 @@
   font-family: $font-bebas;
   font-size: $xl-font;
   letter-spacing: 5.52px;
+}
+
+.paragrafo {
+  font-family: $font-inter;
+  font-size: $sm-font;
+  font-style: normal;
+  font-weight: 400;
+  line-height: calc(15px + 2vw);
 }

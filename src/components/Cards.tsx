@@ -6,7 +6,7 @@ import text from "../styles/text.module.scss";
 export default function Cards() {
   return (
     <div
-      className={`grid grid-cols-1 md:grid-cols-3 place-items-center mb-1 lg:mx-20 md:mx-10 mx-0`}
+      className={`grid grid-cols-1 md:grid-cols-3 place-items-center lg:mx-20 md:mx-10 mx-0 mt-10`}
     >
       <div
         className={`${text.infos} ${covers.cardBorder} mx-20 w-fit md:w-3/4`}

@@ -57,7 +57,7 @@
 
 .mockup {
   object-fit: contain;
-  max-width: 1000px;
+  max-width: 800px;
   width: 90% !important;
   position: relative !important;
   height: unset !important;
@@ -73,7 +73,7 @@
   left: 0;
   margin-left: 5%;
   width: 30%;
-  max-width: 500px;
+  max-width: 400px;
   z-index: 10;
 }
 
@@ -90,6 +90,10 @@
   margin-top: -18vw;
   left: 0;
 }
+.react:hover {
+  filter: invert(43%) sepia(90%) saturate(576%) hue-rotate(151deg)
+    brightness(100%) contrast(105%);
+}
 
 .sass {
   width: 8vw !important;
@@ -97,18 +101,30 @@
   margin-top: -8vw;
   left: 0;
 }
+.sass:hover {
+  filter: invert(65%) sepia(15%) saturate(3595%) hue-rotate(293deg)
+    brightness(100%) contrast(82%);
+}
 
 .js {
   margin-left: 17vw;
   margin-top: 2vw;
   left: 0;
 }
+.js:hover {
+  filter: brightness(0) saturate(100%) invert(88%) sepia(23%) saturate(6407%)
+    hue-rotate(359deg) brightness(103%) contrast(105%);
+}
 
-.phyton {
-  width: 8vw !important;
-  margin-right: 17vw;
+.typescript {
+  width: 7vw !important;
+  margin-right: 18vw;
   margin-top: -18vw;
   right: 0;
+}
+.typescript:hover {
+  filter: invert(43%) sepia(90%) saturate(576%) hue-rotate(160deg)
+    brightness(60%) contrast(250%);
 }
 
 .tailwind {
@@ -116,11 +132,19 @@
   margin-top: -8vw;
   right: 0;
 }
+.tailwind:hover {
+  filter: invert(43%) sepia(90%) saturate(576%) hue-rotate(151deg)
+    brightness(130%) contrast(50%);
+}
 
 .nextjs {
   margin-right: 17vw;
   margin-top: 2vw;
   right: 0;
+}
+.nextjs:hover {
+  filter: invert(65%) sepia(15%) saturate(3595%) hue-rotate(293deg)
+    brightness(150%) contrast(50%);
 }
 
 /* ---------------------------------- Divs ---------------------------------- */

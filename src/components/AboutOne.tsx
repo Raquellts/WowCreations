@@ -9,10 +9,11 @@ export default function AboutOne() {
       <div
         className={`${text.infos} flex justify-center flex-col ml-10 mr-10 md:mr-0`}
       >
-        <p className={text.titulo}>Tenha Presença Online</p>
+        <p className={text.titulo}>TENHA PRESENÇA ONLINE</p>
         Ter um site permite que você tenha uma presença digital que pode ser
         acessada por pessoas em qualquer lugar do mundo, aumentando a
-        visibilidade e alcance do seu negócio ou projeto.
+        visibilidade e alcance do seu negócio ou projeto. Sua jornada para o
+        sucesso digital começa aqui.
       </div>
       <div className="flex justify-end col-span-2">
         <Image

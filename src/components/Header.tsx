@@ -4,7 +4,7 @@ import text from "../styles/text.module.scss";
 
 export default function Header() {
   return (
-    <div className={`${covers.relativeDiv}`}>
+    <div className={`${covers.relativeDiv}`} id="#">
       <div className={`${covers.absoluteBack} ${covers.topLeft} filter2`} />
 
       <div className={`${covers.absoluteBack} ${covers.topRight} filter2`} />

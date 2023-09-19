@@ -4,7 +4,7 @@ import text from "../styles/text.module.scss";
 
 export default function Projects() {
   return (
-    <div className="text-center mb-16">
+    <div className="text-center mb-16" id="projetos">
       <p className={`${text.titulo} h-0`}>projetos</p>
       <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full">

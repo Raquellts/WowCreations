@@ -14,6 +14,7 @@ import AboutTwo from "@/components/AboutTwo";
 import AboutThree from "@/components/AboutThree";
 import Projects from "@/components/Projects";
 import Cards from "@/components/Cards";
+import Image from "next/image";
 
 export default function Home() {
   useEffect(() => {
@@ -23,6 +24,26 @@ export default function Home() {
   return (
     <main>
       <div id="overflow">
+        <div
+          style={{ width: "65px", height: "65px" }}
+          className="md:hidden absolute bottom-0 right-0"
+        >
+          <button
+            data-toggle-theme="dark,winter"
+            data-act-class="ACTIVECLASS"
+            className="btn btn-defualt btn-circle fixed drop-shadow-lg"
+            style={{ zIndex: 100 }}
+          >
+            <Image
+              src={"/icons/sunmoon.svg"}
+              width={35}
+              height={35}
+              alt="..."
+              className="filter opacity-70"
+            />
+          </button>
+        </div>
+
         <Navbar dataToggleTheme="dark,winter" dataActClass="ACTIVECLASS" />
 
         <Header />

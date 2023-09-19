@@ -13,11 +13,12 @@ export default function Modal() {
       <a className={`${buttons.primaryButton} btn`} onClick={showModal}>
         <Image
           src="/icons/contact.svg"
-          width={20}
-          height={20}
+          width={23}
+          height={23}
           alt="..."
-          className="filter"
+          className="filter md:hidden"
         />
+        <p className="hidden md:block">Contato</p>
       </a>
       <dialog
         id="my_modal_1"

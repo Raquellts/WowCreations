@@ -22,6 +22,7 @@
 .absoluteBack {
   background-repeat: no-repeat;
   position: absolute;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100vw;
   height: 100vh;
@@ -56,6 +57,7 @@
 /* ------------------------------ mockups icons ----------------------------- */
 
 .mockup {
+  -o-object-fit: contain;
   object-fit: contain;
   max-width: 800px;
   width: 90% !important;
@@ -91,6 +93,8 @@
   left: 0;
 }
 .react:hover {
+  -webkit-filter: invert(43%) sepia(90%) saturate(576%) hue-rotate(151deg)
+    brightness(100%) contrast(105%);
   filter: invert(43%) sepia(90%) saturate(576%) hue-rotate(151deg)
     brightness(100%) contrast(105%);
 }
@@ -102,6 +106,8 @@
   left: 0;
 }
 .sass:hover {
+  -webkit-filter: invert(65%) sepia(15%) saturate(3595%) hue-rotate(293deg)
+    brightness(100%) contrast(82%);
   filter: invert(65%) sepia(15%) saturate(3595%) hue-rotate(293deg)
     brightness(100%) contrast(82%);
 }
@@ -112,6 +118,8 @@
   left: 0;
 }
 .js:hover {
+  -webkit-filter: brightness(0) saturate(100%) invert(88%) sepia(23%)
+    saturate(6407%) hue-rotate(359deg) brightness(103%) contrast(105%);
   filter: brightness(0) saturate(100%) invert(88%) sepia(23%) saturate(6407%)
     hue-rotate(359deg) brightness(103%) contrast(105%);
 }
@@ -123,6 +131,8 @@
   right: 0;
 }
 .typescript:hover {
+  -webkit-filter: invert(43%) sepia(90%) saturate(576%) hue-rotate(160deg)
+    brightness(60%) contrast(250%);
   filter: invert(43%) sepia(90%) saturate(576%) hue-rotate(160deg)
     brightness(60%) contrast(250%);
 }
@@ -133,6 +143,8 @@
   right: 0;
 }
 .tailwind:hover {
+  -webkit-filter: invert(43%) sepia(90%) saturate(576%) hue-rotate(151deg)
+    brightness(130%) contrast(50%);
   filter: invert(43%) sepia(90%) saturate(576%) hue-rotate(151deg)
     brightness(130%) contrast(50%);
 }
@@ -143,6 +155,8 @@
   right: 0;
 }
 .nextjs:hover {
+  -webkit-filter: invert(65%) sepia(15%) saturate(3595%) hue-rotate(293deg)
+    brightness(150%) contrast(50%);
   filter: invert(65%) sepia(15%) saturate(3595%) hue-rotate(293deg)
     brightness(150%) contrast(50%);
 }
@@ -155,16 +169,28 @@
   max-height: 750px;
   height: 50vw;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .divAbout {
   width: auto;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
 }
@@ -178,9 +204,18 @@
 }
 
 .cardcenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
 }

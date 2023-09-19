@@ -93,8 +93,15 @@ const Navbar = (props: NavbarProps) => {
         <button
           data-toggle-theme={props.dataToggleTheme}
           data-act-class={props.dataActClass}
+          className="btn btn-ghost btn-circle btn-sm"
         >
-          a
+          <Image
+            src={"/icons/sunmoon.svg"}
+            width={50}
+            height={50}
+            alt="..."
+            className="filter opacity-70"
+          />
         </button>
         <Modal />
       </div>

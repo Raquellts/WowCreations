@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import buttons from "../styles/buttons.module.scss";
 
 export default function Modal() {
@@ -10,7 +11,13 @@ export default function Modal() {
   return (
     <>
       <a className={`${buttons.primaryButton} btn`} onClick={showModal}>
-        Contato
+        <Image
+          src="/icons/contact.svg"
+          width={20}
+          height={20}
+          alt="..."
+          className="filter"
+        />
       </a>
       <dialog
         id="my_modal_1"

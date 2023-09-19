@@ -55,11 +55,15 @@ body,
 }
 
 [data-theme="winter"] .filter {
+  -webkit-filter: brightness(0) saturate(100%) invert(29%) sepia(32%)
+    saturate(531%) hue-rotate(174deg) brightness(93%) contrast(96%);
   filter: brightness(0) saturate(100%) invert(29%) sepia(32%) saturate(531%)
     hue-rotate(174deg) brightness(93%) contrast(96%);
 }
 
 [data-theme="winter"] .filter2 {
+  -webkit-filter: brightness(0) saturate(100%) invert(29%) sepia(32%)
+    saturate(531%) hue-rotate(174deg) brightness(93%) contrast(96%) opacity(0.5);
   filter: brightness(0) saturate(100%) invert(29%) sepia(32%) saturate(531%)
     hue-rotate(174deg) brightness(93%) contrast(96%) opacity(0.5);
 }

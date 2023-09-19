@@ -61,7 +61,6 @@ export default function Home() {
         <Footer />
 
         {/*Ruido de fundo*/}
-        <div className={covers.backgroundImage} />
       </div>
     </main>
   );

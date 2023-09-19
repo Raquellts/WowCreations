@@ -1,22 +1,11 @@
 @import "variables";
 
 /* ----------------------------- Covers ----------------------------- */
+
 .relativeDiv {
   position: relative;
   width: 100vw;
   height: auto;
-}
-
-.backgroundImage {
-  mix-blend-mode: color-burn;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 500vh;
-  background-image: $img-noise;
-  background: cover;
-  z-index: -10;
 }
 
 .absoluteBack {

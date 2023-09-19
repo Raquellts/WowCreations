@@ -41,12 +41,11 @@ const Navbar = (props: NavbarProps) => {
             </svg>
           </label>
 
-          <div className="drawer-side">
+          <div className="drawer-side" style={{ zIndex: 100 }}>
             <label htmlFor="my-drawer" className="drawer-overlay"></label>
-
             <ul
               tabIndex={0}
-              className="menu p-4 w-80 min-h-full bg-base-200 text-base-content"
+              className="menu p-4 w-80 min-h-full bg-base-200 text-base-content drawer-menu"
             >
               <li className="mt-16">
                 <a className={buttons.linkButton} href="#">

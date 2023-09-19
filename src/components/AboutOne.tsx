@@ -7,7 +7,7 @@ export default function AboutOne() {
   return (
     <div className={`grid grid-cols-1 md:grid-cols-3`}>
       <div
-        className={`${text.infos} flex justify-center flex-col ml-10 mr-10 md:mr-0`}
+        className={`${text.infos} flex justify-center flex-col mx-10 md:mr-0 xl:-mr-16`}
       >
         <p className={text.titulo}>TENHA PRESENÇA ONLINE</p>
         Ter um site permite que você tenha uma presença digital que pode ser

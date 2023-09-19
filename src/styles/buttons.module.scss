@@ -46,6 +46,95 @@
   filter: brightness(0.8);
 }
 
+/*------------------------------- Toggle button ------------------------------- */
+.plus-minus {
+  --primary: #1e2235;
+  --secondary: #fafbff;
+  --duration: 0.5s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 240px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  border: 4px solid var(--primary);
+  background-size: 300% 300%;
+  transition: transform 0.3s;
+  transform: scale(var(--scale, 1)) translateZ(0);
+  -webkit-animation: var(--name, unchecked) var(--duration) ease forwards;
+  animation: var(--name, unchecked) var(--duration) ease forwards;
+}
+
+.plus-minus:before,
+.plus-minus:after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: var(--height, 16px);
+  left: 6px;
+  top: var(--top, 6px);
+  background: var(--background, var(--primary));
+  -webkit-animation: var(--name-icon-b, var(--name-icon, unchecked-icon))
+    var(--duration) ease forwards;
+  animation: var(--name-icon-b, var(--name-icon, unchecked-icon))
+    var(--duration) ease forwards;
+}
+
+.plus-minus:before {
+  -webkit-clip-path: polygon(
+    0 6px,
+    6px 6px,
+    6px 0,
+    10px 0,
+    10px 6px,
+    16px 6px,
+    16px 10px,
+    10px 10px,
+    10px 16px,
+    6px 16px,
+    6px 10px,
+    0 10px
+  );
+  clip-path: polygon(
+    0 6px,
+    6px 6px,
+    6px 0,
+    10px 0,
+    10px 6px,
+    16px 6px,
+    16px 10px,
+    10px 10px,
+    10px 16px,
+    6px 16px,
+    6px 10px,
+    0 10px
+  );
+}
+
+.plus-minus:after {
+  --height: 4px;
+  --top: 12px;
+  --background: var(--secondary);
+  --name-icon-b: var(--name-icon-a, checked-icon);
+}
+
+.plus-minus:active {
+  --scale: 0.95;
+}
+
+.plus-minus:checked {
+  --name: checked;
+  --name-icon-b: checked-icon;
+  --name-icon-a: unchecked-icon;
+}
+
 /* ------------------------------ Link button ------------------------------- */
 .linkButton {
   background-color: transparent !important;
@@ -58,4 +147,9 @@
   opacity: 100%;
   color: $color-primary;
   transition: 0s ease;
+}
+
+.SocialLink:hover {
+  filter: brightness(0) saturate(100%) invert(69%) sepia(57%) saturate(3941%)
+    hue-rotate(223deg) brightness(100%) contrast(103%);
 }

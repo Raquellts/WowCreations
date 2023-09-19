@@ -1,13 +1,21 @@
 //propers
 import Image from "next/image";
+import React from "react";
+
 //styles
 import buttons from "../styles/buttons.module.scss";
 import navbar from "../styles/navbar.module.scss";
+import Modal from "./Modal";
 
-export default function Navbar() {
+interface NavbarProps {
+  dataToggleTheme: string;
+  dataActClass: string;
+  // Add any other props you expect to receive
+}
+const Navbar = (props: NavbarProps) => {
   return (
     <div
-      className={`${navbar.backNav} sticky top-0 z-50 navbar backdrop-blur-xl bg-white/50`}
+      className={`${navbar.backNav} sticky top-0 z-50 navbar backdrop-blur-2xl bg-base-100/50`}
     >
       <div className="navbar-start">
         <div className="dropdown">
@@ -36,7 +44,9 @@ export default function Navbar() {
             className="menu bg-base-100/80 menu-lg dropdown-content backdrop-blur rounded-box w-52"
           >
             <li>
-              <a className={buttons.linkButton}>Inicio</a>
+              <a className={buttons.linkButton} href="#about3">
+                Inicio
+              </a>
             </li>
             <li>
               <a className={buttons.linkButton}>Sobre</a>
@@ -50,13 +60,15 @@ export default function Navbar() {
           </ul>
         </div>
         {/* logo for desktop */}
-        <Image
-          src={"/logo/WOWlogoPT.png"}
-          width={50}
-          height={50}
-          alt="..."
-          className="ml-5 hidden sm:block"
-        ></Image>
+        <a href="#Inicio">
+          <Image
+            src={"/logo/WOWlogoPT.png"}
+            width={50}
+            height={50}
+            alt="..."
+            className="ml-5 hidden sm:block filter"
+          ></Image>
+        </a>
       </div>
       <div
         className={`${navbar.navbarStyle} menu-horizontal navbar-center hidden md:flex`}
@@ -78,8 +90,15 @@ export default function Navbar() {
       </div>
 
       <div className="navbar-end mr-3">
-        <a className={`${buttons.primaryButton} btn`}>Contato</a>
+        <button
+          data-toggle-theme={props.dataToggleTheme}
+          data-act-class={props.dataActClass}
+        >
+          a
+        </button>
+        <Modal />
       </div>
     </div>
   );
-}
+};
+export default Navbar;

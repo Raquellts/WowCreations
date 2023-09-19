@@ -18,7 +18,7 @@ export default function AboutTwo() {
           className="iframe-wrapper"
         />
       </video>
-      <div className={`grid grid-cols-1 md:grid-cols-3`}>
+      <div className={`grid grid-cols-1 md:grid-cols-3 place-items-stretch `}>
         <div className="flex justify-start col-span-2">
           <Image
             src={"/sites/ABfestival.svg"}
@@ -28,7 +28,7 @@ export default function AboutTwo() {
           />
         </div>
         <div
-          className={`${text.infos} flex justify-center flex-col ml-10 md:ml-0 mr-10 md:mr-10`}
+          className={`${text.infos} flex flex-col justify-center mx-10 md:ml-0 xl:-ml-16 mt-8 md:mt-0`}
         >
           <h2 className={text.titulo}>RESPONSIVIDADE</h2>
           De desktops a smartphones, ofereça uma experiência perfeita. Suas

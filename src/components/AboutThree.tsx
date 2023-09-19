@@ -5,12 +5,12 @@ import text from "../styles/text.module.scss";
 
 export default function AboutThree() {
   return (
-    <div className={`${covers.divAbout} h-auto md:h-100`}>
+    <div className={`${covers.divAbout} h-auto md:h-100`} id="about3">
       {/*Gradient cima esquerda*/}
-      <div className={`${covers.absoluteBack} ${covers.botLeft}`} />
+      <div className={`${covers.absoluteBack} ${covers.botLeft} filter2`} />
 
       {/*Gradient cima direita*/}
-      <div className={`${covers.absoluteBack} ${covers.botRight}`} />
+      <div className={`${covers.absoluteBack} ${covers.botRight} filter2`} />
 
       <div className={`${covers.divAbout}`}>
         <div className={`hidden md:block mb-5`}>
@@ -20,7 +20,7 @@ export default function AboutThree() {
               height={80}
               width={80}
               alt="React"
-              className={`${covers.aboutIcon} ${covers.react}`}
+              className={`${covers.aboutIcon} ${covers.react} filter`}
             />
           </a>
           <a href="https://sass-lang.com/" target="_blank">
@@ -29,7 +29,7 @@ export default function AboutThree() {
               height={70}
               width={70}
               alt="Sass"
-              className={`${covers.aboutIcon} ${covers.sass}`}
+              className={`${covers.aboutIcon} ${covers.sass} filter`}
             />
           </a>
           <a
@@ -41,7 +41,7 @@ export default function AboutThree() {
               height={85}
               width={85}
               alt="JavaScript"
-              className={`${covers.aboutIcon} ${covers.js}`}
+              className={`${covers.aboutIcon} ${covers.js} filter`}
             />
           </a>
         </div>
@@ -69,7 +69,7 @@ export default function AboutThree() {
               height={80}
               width={80}
               alt="React"
-              className={`${covers.aboutIcon} ${covers.typescript}`}
+              className={`${covers.aboutIcon} ${covers.typescript} filter`}
             />
           </a>
           <a href="https://tailwindcss.com/" target="_blank">
@@ -78,7 +78,7 @@ export default function AboutThree() {
               height={70}
               width={70}
               alt="Sass"
-              className={`${covers.aboutIcon} ${covers.tailwind}`}
+              className={`${covers.aboutIcon} ${covers.tailwind} filter`}
             />
           </a>
           <a href="https://nextjs.org/" target="_blank">
@@ -87,7 +87,7 @@ export default function AboutThree() {
               height={85}
               width={85}
               alt="JavaScript"
-              className={`${covers.aboutIcon} ${covers.nextjs}`}
+              className={`${covers.aboutIcon} ${covers.nextjs} filter`}
             />
           </a>
         </div>

@@ -58,3 +58,12 @@
   font-weight: 400;
   line-height: calc(15px + 2vw);
 }
+
+.card {
+  font-family: $font-inter;
+  font-size: $sm-font;
+  font-style: normal;
+  font-weight: 400;
+  line-height: calc(15px + 2vw);
+  margin: 5px;
+}

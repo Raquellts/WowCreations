@@ -1,5 +1,9 @@
 //styles
+"use client";
 import covers from "../styles/covers.module.scss";
+
+import { useEffect } from "react";
+import { themeChange } from "theme-change";
 
 //components
 import Navbar from "@/components/Navbar";
@@ -12,10 +16,14 @@ import Projects from "@/components/Projects";
 import Cards from "@/components/Cards";
 
 export default function Home() {
+  useEffect(() => {
+    themeChange(false);
+  }, []);
+
   return (
     <main>
       <div id="overflow">
-        <Navbar />
+        <Navbar dataToggleTheme="dark,winter" dataActClass="ACTIVECLASS" />
 
         <Header />
 

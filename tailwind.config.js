@@ -11,6 +11,8 @@ module.exports = {
       spacing: {
         100: "70vh",
         101: "70vw",
+        0.2: "2px",
+        102: "26vw",
       },
 
       backgroundImage: {
